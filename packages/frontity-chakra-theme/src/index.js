@@ -19,17 +19,15 @@ const chakraTheme = {
        * logo : "Frontity"
        * logo: "https://uploads-ssl.webflow.com/5be00771820599586e6bd032/5be0223588110a6dbcac2d05_image.svg",
        */
-      logo: "Frontity",
-      showBackgroundPattern: true,
+      logo: "Trevor Mearns ★",
+      showBackgroundPattern: false,
       showSocialLinks: true,
-      /**
-       * socialLinks: [
-            ["pinterest", "https://www.pinterest.com/frontity/"],
-            ["facebook", "https://www.instagram.com/frontity/"],
-            ["twitter", "https://www.twitter.com/frontity/"]
-          ],
-       */
-      socialLinks: [],
+
+      socialLinks: [
+        ["github", "https://github.com/Trevorton27/"],
+        ["linkedin", "https://www.linkedin.com/in/trevor-mearns-8a042a56/"]
+      ],
+
       menu: [],
       featured: {
         showOnArchive: false,
@@ -50,7 +48,7 @@ const chakraTheme = {
           900: "#272727"
         },
         accent: {
-          50: "#ede4d3",
+          50: "#fff",
           100: "#fbe3b2",
           200: "#f6d086",
           300: "#f1be58",

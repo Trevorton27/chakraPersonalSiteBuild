@@ -1,4 +1,4 @@
-import { Box, ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { connect, Head } from "frontity";
 import Switch from "@frontity/components/switch";
 import React from "react";
@@ -11,6 +11,7 @@ import Post from "./post/post";
 import SearchResults from "./search";
 import Title from "./title";
 import FontFace from "./styles/font-face";
+import "./index.css";
 
 // Theme is the root React component of our theme. The one we will export
 // in roots.
@@ -40,19 +41,19 @@ const Theme = ({ state }) => {
 
       {/* Add the main section. It renders a different component depending
       on the type of URL we are in. */}
-      <Box
+      {/* <Box
         as="main"
         mt={{ base: "40px", md: "70px" }}
         minH="calc(100vh - 320px)"
-      >
-        <Switch>
-          <Loading when={data.isFetching} />
-          <SearchResults when={data.isSearch} />
-          <Archive when={data.isArchive} />
-          <Post when={data.isPostType} />
-          <Page404 when={data.is404} />
-        </Switch>
-      </Box>
+      > */}
+      <Switch>
+        <Loading when={data.isFetching} />
+        <SearchResults when={data.isSearch} />
+        {/* <Archive when={data.isArchive} /> */}
+        <Post when={data.isPostType} />
+        <Page404 when={data.is404} />
+      </Switch>
+      {/* </Box> */}
 
       <Footer />
     </ChakraProvider>

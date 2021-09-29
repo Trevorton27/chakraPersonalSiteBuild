@@ -7,8 +7,8 @@ const FooterSection = props => (
   <Box
     as="footer"
     pos="relative"
-    bg="primary.900"
-    py={{ base: "32px", lg: "40px" }}
+    bg="primary.700"
+    py={{ base: "20px", lg: "22px" }}
     {...props}
   />
 );
@@ -28,14 +28,14 @@ const FooterSectionItem = props => (
 );
 
 const Footer = ({ state }) => (
-  <FooterSection alignSelf="flex-end">
+  <FooterSection alignSelf="flex-end" position="absolute" width="100%">
     <FooterSectionGroup>
       <FooterSectionItem
         fontWeight="bold"
         fontFamily="heading"
         textTransform="uppercase"
       >
-        © {new Date().getFullYear()} Frontity
+        © {new Date().getFullYear()} Trevor Mearns
       </FooterSectionItem>
 
       <FooterSectionItem borderColor="accent.400">

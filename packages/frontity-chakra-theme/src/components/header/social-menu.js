@@ -1,12 +1,7 @@
 import { Box, VisuallyHidden } from "@chakra-ui/react";
 import React from "react";
 import { SiteMenu } from "./navigation";
-import {
-  IoLogoTwitter,
-  IoLogoPinterest,
-  IoLogoFacebook,
-  IoLogoInstagram
-} from "react-icons/io";
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 import Link from "../link";
 
 // warning for showSocialLinks and menu.length
@@ -39,10 +34,8 @@ const SocialMenuItem = ({ icon, label, link, ...props }) => (
 );
 
 const icons = {
-  twitter: IoLogoTwitter,
-  pinterest: IoLogoPinterest,
-  facebook: IoLogoFacebook,
-  instagram: IoLogoInstagram
+  github: IoLogoGithub,
+  linkedin: IoLogoLinkedin
 };
 
 const SocialNav = ({ menu, ...props }) => (

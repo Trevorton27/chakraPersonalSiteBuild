@@ -1,9 +1,9 @@
 const settings = {
-  name: "chakra-react",
+  name: "frontity-chakra-react",
   state: {
     frontity: {
-      url: "https://test.frontity.org",
-      title: "Test Frontity Blog",
+      url: "https://personalsitesource.xyz",
+      title: "Trevor Mearns",
       description: "WordPress installation for Frontity development"
     }
   },
@@ -14,16 +14,14 @@ const settings = {
         theme: {
           menu: [
             ["Home", "/"],
-            ["Nature", "/category/nature/"],
-            ["Travel", "/category/travel/"],
-            ["Japan", "/tag/japan/"],
-            ["About Us", "/about-us/"]
+            ["Blog", "/blog"],
+            ["Portfolio", "/portfolio/"],
+            ["Contact", "/contact-trevor/"]
           ],
-          socialLinks: [
-            ["pinterest", "https://www.pinterest.com/frontity/"],
-            ["facebook", "https://www.instagram.com/frontity/"],
-            ["twitter", "https://www.twitter.com/frontity/"]
-          ],
+          // socialLinks: [
+          //   ["github", "https://github.com/Trevorton27/"],
+          //   ["linkedin", "https://www.linkedin.com/in/trevor-mearns-8a042a56/"]
+          // ],
           featured: {
             showOnArchive: true,
             showOnPost: true
@@ -35,7 +33,9 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          url: "https://test.frontity.org"
+          url: "https://personalsitesource.xyz",
+          postsPage: "/blog",
+          homepage: "/home"
         }
       }
     },

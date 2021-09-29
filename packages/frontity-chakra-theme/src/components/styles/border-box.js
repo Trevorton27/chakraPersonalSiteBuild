@@ -8,7 +8,7 @@ import { Box } from "@chakra-ui/react";
 const BorderBox = props => (
   <Box
     p="40px"
-    bg="accent.50"
+    bg="#fff"
     borderTop="4px solid"
     borderColor="accent.400"
     {...props}
